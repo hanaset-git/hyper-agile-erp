@@ -1,7 +1,7 @@
-import type { Config } from "tailwindcss";
-import twAnimate from "./plugins/tw-animate-css";
+import twAnimate from './plugins/tw-animate-css/index.js'; // update path if needed
 
-const config: Config = {
+/** @type {import('tailwindcss').Config} */
+const config = {
   content: ["./src/**/*.{ts,tsx}"],
   theme: {
     extend: {
@@ -19,3 +19,4 @@ const config: Config = {
 };
 
 export default config;
+
